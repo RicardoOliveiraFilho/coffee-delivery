@@ -1,3 +1,13 @@
+import { HomeContainer } from './styles'
+
+import { Intro } from './components/Intro'
+import { ListOfCafes } from './components/ListOfCafes'
+
 export function HomePage() {
-  return <h1>Home</h1>
+  return (
+    <HomeContainer>
+      <Intro />
+      <ListOfCafes />
+    </HomeContainer>
+  )
 }
