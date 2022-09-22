@@ -12,7 +12,7 @@ export function InfoWithIcon({ icon, text, iconColor }: InfoWithIconProps) {
     <InfoWithIconContainer>
       <>
         <IconContainer iconColor={iconColor}>{icon}</IconContainer>
-        {typeof text === 'string' ? <p>{text}</p> : { text }}
+        {typeof text === 'string' ? <p>{text}</p> : text}
       </>
     </InfoWithIconContainer>
   )
